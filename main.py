@@ -1,4 +1,3 @@
-
 # with open("weather_data.csv") as weather_file:
 #     data = weather_file.readlines()
 #
@@ -8,6 +7,8 @@ import csv
 
 with open("weather_data.csv") as data_file:
     data = csv.reader(data_file)
+    temperatures = []
     for row in data:
-        print(row)
-
+        if row[1] != "temp":
+            temperatures.append(int(row[1]))
+print(temperatures)
