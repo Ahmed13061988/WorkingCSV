@@ -15,4 +15,6 @@ import pandas
 # print(temperatures)
 
 data = pandas.read_csv("weather_data.csv")
-print(data["temp"])
+data_dict = data.to_dict()
+data_list = data["temp"].tolist()
+print(data_list)
