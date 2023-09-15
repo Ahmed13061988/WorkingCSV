@@ -18,3 +18,6 @@ data = pandas.read_csv("weather_data.csv")
 data_dict = data.to_dict()
 data_list = data["temp"].tolist()
 print(data_list)
+
+average = data["temp"].mean()
+print(average)
