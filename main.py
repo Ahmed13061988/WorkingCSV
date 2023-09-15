@@ -20,5 +20,6 @@ data_list = data["temp"].tolist()
 print(data_list)
 
 average = data["temp"].mean()
-print(average)
+max_temp = data["temp"].max()
+print(max_temp)
 
