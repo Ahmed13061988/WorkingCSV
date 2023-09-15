@@ -21,5 +21,5 @@ print(data_list)
 
 average = data["temp"].mean()
 max_temp = data["temp"].max()
-print(max_temp)
+print(data[data.day == "Monday"])
 
