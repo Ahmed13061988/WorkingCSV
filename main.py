@@ -21,3 +21,4 @@ print(data_list)
 
 average = data["temp"].mean()
 print(average)
+
